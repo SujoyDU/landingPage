@@ -14,7 +14,9 @@ declare let $: any;
 export class AppComponent {
   title = 'app works!';
   url:string;
+  msg:string;
   userForm: FormGroup;
+  success:boolean;
 
   constructor(private formBuilder: FormBuilder, private http: Http) {
     this.url = 'http://localhost:3000/api/comments';
@@ -24,6 +26,7 @@ export class AppComponent {
     this.userForm = this.formBuilder.group({
       email: ['']
     });
+    this.success = false;
   }
   signup(){
     console.log(this.userForm.value);
@@ -34,11 +37,17 @@ export class AppComponent {
      let EMAIL_REGEXP = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
 
      if(EMAIL_REGEXP.test(this.userForm.value.email)){
-       //console.log("correct");
+       this.success = true;
+       console.log("correct");
        $('#myModal').modal('show');
+       this.msg = 'Thank you!! For your email!!';
        this.addEmails(this.userForm.value.email);
      }
-     else console.log("incorrect");
+     else {
+       this.success = false;
+       $('#myModal').modal('show');
+       this.msg  = 'Please give a valid email!';
+     }
      //
 
   }
