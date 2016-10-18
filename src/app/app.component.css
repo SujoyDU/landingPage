@@ -1,0 +1,101 @@
+.container-fluid {
+    padding: 0px !important;
+}
+
+.title-tag {
+    margin-top: 60px;
+}
+
+.header-text {
+    font-family: 'Lato', sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    text-align: center;
+    color: #ffffff;
+}
+
+.chart-icons {
+    margin-top: 10px;
+}
+
+.chart-icons li img {
+    height: 45px;
+    width: 45px;
+}
+
+.keywords li {
+    font-family: 'Asap', sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    text-align: center;
+    color: #9db0c4;
+    margin-right: 7px;
+}
+
+.keywords li:last-child {
+    margin-right: 0;
+}
+
+.detail-text {
+    font-family: 'Asap', sans-serif;
+    font-size: 17px;
+    font-weight: normal;
+    color: #9db0c4;
+    text-align: center;
+}
+
+.detail-text p {
+    line-height: 120%;
+    margin: 0;
+}
+
+.newsletter-form {
+    margin-top: 20px;
+}
+
+.newsletter-form input {
+    margin-right: 30px;
+}
+
+.newsletter-form .form-control {
+    width: 250px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.newsletter-form .btn-newslet, .btn-default:hover, .btn-default:focus {
+    height: 30px;
+    width: 80px;
+    background-image: linear-gradient(to bottom, #61DBFF 0px, #61DBFF 100%);
+    background-repeat: repeat-x;
+    border-color: #61DBFF;
+    text-shadow: 0 1px 0 #61DBFF;
+    color: #fff;
+    background-position: 0;
+    line-height: 0.429;
+    border-radius: 5px;
+}
+
+.newsletter-form .form-control:focus {
+    border-color: inherit;
+    box-shadow: none;
+    outline: 0 none;
+}
+footer p{
+    font-family: 'Asap', sans-serif;
+    font-size: 12px;
+    font-weight: normal;
+    color: #9db0c4;
+}
+
+footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    overflow:hidden;
+}
+.modal-content{
+  top: 240px;
+}
