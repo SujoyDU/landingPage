@@ -99,3 +99,6 @@ footer {
 .modal-content{
   top: 240px;
 }
+.alert{
+  margin: 0;
+}
